@@ -27,4 +27,6 @@ public class MedicalRecord {
     private Date date;
     @Column(columnDefinition = "text")
     private String diagnosis;
+    @Column(columnDefinition = "text")
+    private String f;
 }
