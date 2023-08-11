@@ -19,14 +19,16 @@ public class MedicalRecord {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "doctor_id")
     private Doctor doctor;
 
     @ManyToOne
+    @JoinColumn(name = "patient_id")
     private Patient patient;
     @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date date;
     @Column(columnDefinition = "text")
     private String diagnosis;
-    @Column(columnDefinition = "text")
-    private String f;
+
 }

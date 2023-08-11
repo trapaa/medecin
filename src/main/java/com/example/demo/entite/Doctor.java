@@ -13,4 +13,6 @@ import lombok.Setter;
 public class Doctor extends User {
     @Column(nullable = false)
     private String specialization;
+
+
 }
